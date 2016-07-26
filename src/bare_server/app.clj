@@ -15,13 +15,3 @@
     (Thread/sleep 20000)
     (println "Stopping app!")
     (component/stop app)))
-
-(comment
-
-  (def app (build-app {:port 8080}))
-  (def started-app (component/start app))
-  (def stopped-app (component/stop started-app))
-
-  (-main)
-
-  )
